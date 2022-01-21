@@ -1,0 +1,28 @@
+{
+  "name": "sokoban-engine",
+  "version": "1.0.0",
+  "description": "Create and manage Sokoban games. Levels and entities are fully customisable.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/WillTDA/Sokoban-Engine"
+  },
+  "keywords": [
+    "sokoban",
+    "engine",
+    "boxman",
+    "warehouseman",
+    "box",
+    "block",
+    "puzzle",
+    "game"
+  ],
+  "author": "WillTDA",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "sokoban-generator": "^1.1.5"
+  }
+}
