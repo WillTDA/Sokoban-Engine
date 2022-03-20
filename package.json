@@ -1,6 +1,6 @@
 {
   "name": "sokoban-engine",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Create and manage Sokoban games. Levels and entities are fully customisable.",
   "main": "src/index.js",
   "scripts": {
