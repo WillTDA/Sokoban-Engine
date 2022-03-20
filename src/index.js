@@ -219,7 +219,7 @@ class Sokoban {
     reset() {
         this.level = JSON.parse(JSON.stringify(this.originalLevel));
         this.playerLastTile = this.options.entityAppearance.floor;
-        this.boxesLastTile = {};
+        this.boxesLastTiles = {};
         this.boxes = {};
         this.boxGoals = [];
         this.hasWon = false;
@@ -231,6 +231,7 @@ class Sokoban {
             for (let j = 0; j < this.level[i].length; j++) {
                 if (this.level[i][j] === this.options.entityAppearance.box) {
                     this.boxes[`${j},${i}`] = boxCounter;
+                    this.boxesLastTiles[`${boxCounter}`] = this.options.entityAppearance.floor;
                     boxCounter++;
                 }
                 if (this.level[i][j] === this.options.entityAppearance.goal) this.boxGoals.push({ x: j, y: i });
